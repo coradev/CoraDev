@@ -1,0 +1,101 @@
+/* Change scroll style */
+::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+
+
+/* Header */
+
+.header {
+    width: 100%;
+    height: 55px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.header__navbar {
+    display: flex;
+}
+.header__navbar-item {
+    text-decoration: none;
+    list-style: none;
+}
+.header__navbar-item.header__navbar-title {
+    color: #fff;
+    font-weight: 400;
+    font-size: medium;
+    text-align: center;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin: auto 0px auto 2rem;
+}
+.header__navbar-back {
+    margin-right: 2rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.9rem 0px auto 2rem;
+}
+.header__navbar-logo {
+    width: 112px;
+    height: 28px;
+    margin: 10px 0px auto 2rem;
+    display: none;
+}
+.header__navbar-line {
+    margin-left: 2rem;
+    border-right: 2px solid #fff;
+    height: 17px;
+    margin-top: 1.2rem;
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    .header__navbar-item.header__navbar-title {
+        color: #fff;
+        font-weight: 500;
+        font-size: larger;
+        text-align: center;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        margin: auto 0px auto 2rem;
+    }
+    .header__navbar-logo {
+        width: 112px;
+        height: 28px;
+        margin: 10px 0px auto 2rem;
+        display: block;
+    }
+    .header__navbar-line {
+        margin-left: 2rem;
+        border-right: 2px solid #fff;
+        height: 17px;
+        margin-top: 1.2rem;
+        display: block;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    .header__navbar-item.header__navbar-title {
+        color: #fff;
+        font-weight: 600;
+        font-size: x-large;
+        text-align: center;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        margin: auto 0px auto 2rem;
+    }
+}
+/* End Header */
+
